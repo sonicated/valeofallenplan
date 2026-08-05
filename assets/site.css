@@ -1,0 +1,106 @@
+@import url('https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Newsreader:opsz,wght@6..72,600;6..72,700&display=swap');
+
+:root {
+  color-scheme: light;
+  --ink: #14231c;
+  --forest: #176b4d;
+  --meadow: #a8cd57;
+  --sky: #38a9d6;
+  --sun: #f2aa24;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  font-family: 'DM Sans', sans-serif;
+  color: var(--ink);
+  text-rendering: optimizeLegibility;
+}
+
+h1,
+h2,
+h3,
+.font-display {
+  font-family: 'Newsreader', serif;
+  letter-spacing: 0;
+}
+
+.topographic-pattern {
+  background-color: #f8fafc;
+  background-image: radial-gradient(circle at 15% 20%, transparent 0, transparent 21px, rgba(23, 107, 77, 0.07) 22px, transparent 23px), radial-gradient(circle at 85% 80%, transparent 0, transparent 34px, rgba(56, 169, 214, 0.08) 35px, transparent 36px);
+  background-size: 78px 78px, 112px 112px;
+}
+
+.nav-link {
+  position: relative;
+}
+
+.nav-link::after {
+  background: var(--meadow);
+  bottom: -0.45rem;
+  content: '';
+  height: 3px;
+  left: 0;
+  position: absolute;
+  transform: scaleX(0);
+  transform-origin: right;
+  transition: transform 180ms ease;
+  width: 100%;
+}
+
+.nav-link:hover::after,
+.nav-link[aria-current='page']::after {
+  transform: scaleX(1);
+  transform-origin: left;
+}
+
+.focus-ring:focus-visible,
+a:focus-visible,
+button:focus-visible,
+input:focus-visible,
+select:focus-visible,
+textarea:focus-visible {
+  outline: 3px solid rgba(56, 169, 214, 0.55);
+  outline-offset: 3px;
+}
+
+.reveal {
+  animation: rise-in 560ms ease both;
+}
+
+.reveal-delay-1 {
+  animation-delay: 90ms;
+}
+
+.reveal-delay-2 {
+  animation-delay: 180ms;
+}
+
+@keyframes rise-in {
+  from {
+    opacity: 0;
+    transform: translateY(12px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  html {
+    scroll-behavior: auto;
+  }
+
+  .reveal,
+  .reveal-delay-1,
+  .reveal-delay-2 {
+    animation: none;
+  }
+
+  * {
+    transition-duration: 0.01ms !important;
+  }
+}
