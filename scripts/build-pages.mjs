@@ -9,8 +9,8 @@ const pageNames = [
   "about.html",
   "governance.html",
   "meetings.html",
+  "news.html",
   "survey-results.html",
-  "documents.html",
   "contact.html",
 ];
 

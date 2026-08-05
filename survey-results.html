@@ -3,29 +3,131 @@
 <head>
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1" />
-  <meta name="description" content="Themes from the Vale of Allen household leaflet consultation." />
+  <meta name="description" content="Analysis of the Vale of Allen household survey, including participation, housing, local priorities, work and infrastructure." />
   <title>Community Survey Results | Vale of Allen Neighbourhood Plan</title>
   <script src="https://cdn.tailwindcss.com"></script>
   <link rel="stylesheet" href="/assets/site.css" />
+  <link rel="icon" type="image/png" href="/images/logo-no-text.png" />
 </head>
 <body class="bg-white text-slate-900 antialiased">
   <a href="#main-content" class="focus-ring fixed left-4 top-4 z-50 -translate-y-24 bg-emerald-800 px-4 py-3 text-sm font-bold text-white transition-transform focus:translate-y-0">Skip to content</a>
   <header class="border-b border-slate-200 bg-white">
-    <div class="mx-auto flex max-w-7xl items-center justify-between gap-4 px-5 py-4 lg:px-8"><a href="/" class="flex min-w-0 items-center" aria-label="Vale of Allen Neighbourhood Plan home"><img src="/images/logo-no-text.png" alt="Vale of Allen Neighbourhood Plan Logo" class="h-12 w-auto me-3" /><span class="font-display text-lg font-bold leading-tight text-emerald-900 sm:text-xl">Vale of Allen<br class="sm:hidden" /> Neighbourhood Plan</span></a><button type="button" class="focus-ring inline-flex h-11 w-11 shrink-0 items-center justify-center border border-slate-300 lg:hidden" data-menu-button aria-controls="mobile-navigation" aria-expanded="false"><span class="sr-only">Open navigation</span><svg data-menu-open class="h-6 w-6" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="M4 6h16M4 12h16M4 18h16" /></svg><svg data-menu-close class="hidden h-6 w-6" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="m6 6 12 12M18 6 6 18" /></svg></button><nav class="hidden lg:block" aria-label="Primary navigation"><ul class="flex items-center gap-6 text-sm font-semibold text-slate-700"><li><a href="/" class="nav-link hover:text-emerald-800">Home</a></li><li><a href="/about" class="nav-link hover:text-emerald-800">About</a></li><li><a href="/governance" class="nav-link hover:text-emerald-800">Governance</a></li><li><a href="/meetings" class="nav-link hover:text-emerald-800">Meetings</a></li><li><a href="/survey-results" class="nav-link text-emerald-800" aria-current="page">Survey Results</a></li><li><a href="/documents" class="nav-link hover:text-emerald-800">Documents</a></li><li><a href="/contact" class="nav-link hover:text-emerald-800">Contact</a></li></ul></nav></div>
-    <nav id="mobile-navigation" class="hidden border-t border-slate-200 bg-slate-50 px-5 py-3 lg:hidden" data-mobile-menu aria-label="Mobile navigation"><ul class="grid grid-cols-2 gap-1 text-sm font-semibold text-slate-700"><li><a href="/" class="block px-3 py-2">Home</a></li><li><a href="/about" class="block px-3 py-2">About</a></li><li><a href="/governance" class="block px-3 py-2">Governance</a></li><li><a href="/meetings" class="block px-3 py-2">Meetings</a></li><li><a href="/survey-results" class="block bg-emerald-50 px-3 py-2 text-emerald-800" aria-current="page">Survey Results</a></li><li><a href="/documents" class="block px-3 py-2">Documents</a></li><li><a href="/contact" class="block px-3 py-2">Contact</a></li></ul></nav>
+    <div class="mx-auto flex max-w-7xl items-center justify-between gap-4 px-5 py-4 lg:px-8"><a href="/" class="flex min-w-0 items-center" aria-label="Vale of Allen Neighbourhood Plan home"><img src="/images/logo-no-text.png" alt="Vale of Allen Neighbourhood Plan Logo" class="h-12 w-auto me-3" /><span class="font-display text-lg font-bold leading-tight text-emerald-900 sm:text-xl">Vale of Allen<br class="sm:hidden" /> Neighbourhood Plan</span></a><button type="button" class="focus-ring inline-flex h-11 w-11 shrink-0 items-center justify-center border border-slate-300 lg:hidden" data-menu-button aria-controls="mobile-navigation" aria-expanded="false"><span class="sr-only">Open navigation</span><svg data-menu-open class="h-6 w-6" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="M4 6h16M4 12h16M4 18h16" /></svg><svg data-menu-close class="hidden h-6 w-6" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="m6 6 12 12M18 6 6 18" /></svg></button><nav class="hidden lg:block" aria-label="Primary navigation"><ul class="flex items-center gap-4 text-sm font-semibold text-slate-700 xl:gap-6"><li><a href="/" class="nav-link hover:text-emerald-800">Home</a></li><li><a href="/about" class="nav-link hover:text-emerald-800">About</a></li><li><a href="/governance" class="nav-link hover:text-emerald-800">Governance</a></li><li><a href="/meetings" class="nav-link hover:text-emerald-800">Meetings</a></li><li><a href="/news" class="nav-link hover:text-emerald-800">News</a></li><li><a href="/survey-results" class="nav-link text-emerald-800" aria-current="page">Survey Results</a></li><li><a href="/contact" class="nav-link hover:text-emerald-800">Contact</a></li></ul></nav></div>
+    <nav id="mobile-navigation" class="hidden border-t border-slate-200 bg-slate-50 px-5 py-3 lg:hidden" data-mobile-menu aria-label="Mobile navigation"><ul class="grid grid-cols-2 gap-1 text-sm font-semibold text-slate-700"><li><a href="/" class="block px-3 py-2">Home</a></li><li><a href="/about" class="block px-3 py-2">About</a></li><li><a href="/governance" class="block px-3 py-2">Governance</a></li><li><a href="/meetings" class="block px-3 py-2">Meetings</a></li><li><a href="/news" class="block px-3 py-2">News</a></li><li><a href="/survey-results" class="block bg-emerald-50 px-3 py-2 text-emerald-800" aria-current="page">Survey Results</a></li><li><a href="/contact" class="block px-3 py-2">Contact</a></li></ul></nav>
   </header>
   <main id="main-content">
     <section class="topographic-pattern border-b border-slate-200"><div class="mx-auto max-w-7xl px-5 py-14 lg:px-8 lg:py-20"><p class="text-xs font-bold uppercase tracking-[0.18em] text-emerald-800">Community survey results</p><h1 class="mt-4 max-w-4xl text-5xl font-bold leading-tight sm:text-6xl">What residents<br /><span class="text-emerald-800">want to protect and improve.</span></h1><p class="mt-6 max-w-3xl text-lg leading-8 text-slate-600">These themes were gathered through a physical leaflet consultation delivered to households across all nine Vale of Allen settlements.</p></div></section>
     <section class="border-b border-emerald-200 bg-emerald-50 py-12" aria-labelledby="thanks-heading"><div class="mx-auto grid max-w-7xl gap-6 px-5 lg:grid-cols-[0.6fr_1.4fr] lg:px-8"><div><p class="text-xs font-bold uppercase tracking-[0.18em] text-emerald-800">With thanks</p><h2 id="thanks-heading" class="mt-3 text-3xl font-bold text-slate-900">Made possible by our community</h2></div><div class="space-y-4 text-base leading-7 text-slate-700"><p>The Steering Group is deeply grateful to every resident who took the time to respond. Each contribution has helped build a clearer picture of the priorities, concerns and hopes shared across the Vale of Allen.</p><p>We also extend our sincere thanks to all the volunteers who made the consultation possible by distributing leaflets across the nine settlements, encouraging participation and helping bring the responses together. Their time, care and local knowledge have given this work a stronger, more representative foundation.</p></div></div></section>
-    <section class="bg-white py-16 lg:py-20" aria-labelledby="themes-heading"><div class="mx-auto max-w-7xl px-5 lg:px-8"><div class="grid gap-8 lg:grid-cols-[0.6fr_1.4fr]"><div><p class="text-xs font-bold uppercase tracking-[0.18em] text-emerald-800">Key findings</p><h2 id="themes-heading" class="mt-3 text-4xl font-bold">A clear direction</h2><p class="mt-4 leading-7 text-slate-600">Responses show strong support for proportionate development and careful stewardship of the area's rural character.</p></div><div class="grid gap-px border border-slate-200 bg-slate-200">
-      <article class="grid gap-5 bg-white p-6 sm:grid-cols-[7rem_1fr] sm:p-8"><p class="text-xs font-bold uppercase tracking-[0.15em] text-emerald-700">Theme 01</p><div><h3 class="text-3xl font-bold">Housing priorities</h3><p class="mt-3 leading-7 text-slate-600">Residents favour small-scale housing that responds to evidenced local need and supports people with a connection to the area. There is concern about large speculative developments that could overwhelm village form, local services or landscape setting.</p></div></article>
-      <article class="grid gap-5 bg-white p-6 sm:grid-cols-[7rem_1fr] sm:p-8"><p class="text-xs font-bold uppercase tracking-[0.15em] text-sky-700">Theme 02</p><div><h3 class="text-3xl font-bold">Environment & heritage</h3><p class="mt-3 leading-7 text-slate-600">Protecting village character, conservation boundaries and historic assets is a high public priority. Responses also value dark skies, biodiversity, open views and the landscape features that distinguish the Vale of Allen.</p></div></article>
-      <article class="grid gap-5 bg-white p-6 sm:grid-cols-[7rem_1fr] sm:p-8"><p class="text-xs font-bold uppercase tracking-[0.15em] text-amber-700">Theme 03</p><div><h3 class="text-3xl font-bold">Business & infrastructure</h3><p class="mt-3 leading-7 text-slate-600">There is support for the local rural economy and agriculture, alongside better infrastructure for home working. Residents also want practical improvements to local travel connections and safe, useful walking routes.</p></div></article>
-    </div></div></div></section>
-    <section class="border-y border-slate-200 bg-emerald-800 py-14 text-white"><div class="mx-auto grid max-w-7xl gap-7 px-5 sm:grid-cols-3 lg:px-8"><div><p class="text-4xl font-bold text-[#d9eea6]">Small scale</p><p class="mt-2 text-sm leading-6 text-emerald-100">Development shaped around demonstrable local need.</p></div><div class="border-t border-emerald-600 pt-6 sm:border-l sm:border-t-0 sm:pl-7 sm:pt-0"><p class="text-4xl font-bold text-[#b9e7f7]">Character first</p><p class="mt-2 text-sm leading-6 text-emerald-100">Village identity, heritage and landscape valued together.</p></div><div class="border-t border-emerald-600 pt-6 sm:border-l sm:border-t-0 sm:pl-7 sm:pt-0"><p class="text-4xl font-bold text-[#ffd680]">Rural vitality</p><p class="mt-2 text-sm leading-6 text-emerald-100">Support for farming, local enterprise and connectivity.</p></div></div></section>
-    <section class="bg-slate-50 py-14"><div class="mx-auto flex max-w-7xl flex-col justify-between gap-6 px-5 sm:flex-row sm:items-center lg:px-8"><div><h2 class="text-3xl font-bold">From feedback to policy</h2><p class="mt-2 max-w-2xl text-slate-600">Working groups are testing these themes against evidence and planning requirements.</p></div><a href="/documents" class="inline-flex min-h-12 shrink-0 items-center bg-emerald-700 px-6 py-3 text-sm font-bold text-white hover:bg-emerald-800">Read the evidence summaries <span class="ms-3">→</span></a></div></section>
+    <section class="bg-white py-16 lg:py-20" aria-labelledby="participation-heading">
+      <div class="mx-auto max-w-7xl px-5 lg:px-8">
+        <div class="grid gap-10 lg:grid-cols-[0.55fr_1.45fr] lg:gap-16">
+          <div>
+            <p class="text-xs font-bold uppercase tracking-[0.18em] text-emerald-800">Participation</p>
+            <h2 id="participation-heading" class="mt-3 text-4xl font-bold">A broad household response</h2>
+            <p class="mt-4 leading-7 text-slate-600">Questionnaires were returned from every parish area covered by the plan.</p>
+          </div>
+          <div class="min-w-0">
+            <dl class="grid gap-px border border-slate-200 bg-slate-200 sm:grid-cols-3">
+              <div class="bg-white p-6"><dt class="text-sm font-semibold text-slate-600">Questionnaires returned</dt><dd class="mt-3 text-4xl font-bold text-emerald-800">269</dd><p class="mt-2 text-sm text-slate-500">From 655 households</p></div>
+              <div class="bg-white p-6"><dt class="text-sm font-semibold text-slate-600">Household response rate</dt><dd class="mt-3 text-4xl font-bold text-emerald-800">41.1%</dd><p class="mt-2 text-sm text-slate-500">Across the plan area</p></div>
+              <div class="bg-white p-6"><dt class="text-sm font-semibold text-slate-600">Adults in responding households</dt><dd class="mt-3 text-4xl font-bold text-emerald-800">541</dd><p class="mt-2 text-sm text-slate-500">Residents aged 16 and over</p></div>
+            </dl>
+
+            <div class="mt-8 overflow-x-auto">
+              <table class="w-full min-w-[36rem] border-collapse text-left text-sm">
+                <caption class="mb-4 text-left text-xl font-bold text-slate-900">Responses by parish area</caption>
+                <thead><tr class="border-y border-slate-300 text-slate-600"><th scope="col" class="py-3 pe-4 font-semibold">Parish area</th><th scope="col" class="px-4 py-3 text-right font-semibold">Households</th><th scope="col" class="px-4 py-3 text-right font-semibold">Returns</th><th scope="col" class="py-3 ps-4 text-right font-semibold">Response rate</th></tr></thead>
+                <tbody class="divide-y divide-slate-200">
+                  <tr><th scope="row" class="py-3 pe-4 font-semibold text-slate-900">Gussage St Michael</th><td class="px-4 py-3 text-right text-slate-600">91</td><td class="px-4 py-3 text-right text-slate-600">45</td><td class="py-3 ps-4 text-right font-bold text-emerald-800">49.5%</td></tr>
+                  <tr><th scope="row" class="py-3 pe-4 font-semibold text-slate-900">Gussage All Saints</th><td class="px-4 py-3 text-right text-slate-600">100</td><td class="px-4 py-3 text-right text-slate-600">48</td><td class="py-3 ps-4 text-right font-bold text-emerald-800">48.0%</td></tr>
+                  <tr><th scope="row" class="py-3 pe-4 font-semibold text-slate-900">Crichel</th><td class="px-4 py-3 text-right text-slate-600">111</td><td class="px-4 py-3 text-right text-slate-600">51</td><td class="py-3 ps-4 text-right font-bold text-emerald-800">45.9%</td></tr>
+                  <tr><th scope="row" class="py-3 pe-4 font-semibold text-slate-900">Witchampton</th><td class="px-4 py-3 text-right text-slate-600">182</td><td class="px-4 py-3 text-right text-slate-600">81</td><td class="py-3 ps-4 text-right font-bold text-emerald-800">44.5%</td></tr>
+                  <tr><th scope="row" class="py-3 pe-4 font-semibold text-slate-900">Hinton Martell &amp; Hinton Parva</th><td class="px-4 py-3 text-right text-slate-600">171</td><td class="px-4 py-3 text-right text-slate-600">44</td><td class="py-3 ps-4 text-right font-bold text-emerald-800">25.7%</td></tr>
+                </tbody>
+                <tfoot><tr class="border-t-2 border-slate-400"><th scope="row" class="py-3 pe-4 font-bold text-slate-900">Total</th><td class="px-4 py-3 text-right font-bold text-slate-900">655</td><td class="px-4 py-3 text-right font-bold text-slate-900">269</td><td class="py-3 ps-4 text-right font-bold text-emerald-800">41.1%</td></tr></tfoot>
+              </table>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="border-y border-slate-200 bg-slate-50 py-16 lg:py-20" aria-labelledby="analysis-heading">
+      <div class="mx-auto max-w-7xl px-5 lg:px-8">
+        <div class="max-w-3xl">
+          <p class="text-xs font-bold uppercase tracking-[0.18em] text-emerald-800">What the responses show</p>
+          <h2 id="analysis-heading" class="mt-3 text-4xl font-bold">Place, housing and local needs</h2>
+        </div>
+        <div class="mt-10 grid gap-12 lg:grid-cols-2 lg:gap-16">
+          <article aria-labelledby="quality-heading">
+            <h3 id="quality-heading" class="text-3xl font-bold">Quality of life</h3>
+            <p class="mt-4 leading-7 text-slate-600">When residents scored aspects of life in the Vale, the highest-ranked factors combined social wellbeing with the natural setting.</p>
+            <ol class="mt-7 space-y-4">
+              <li class="grid grid-cols-[2rem_1fr] gap-3 border-b border-slate-200 pb-4"><span class="font-bold text-emerald-800">1</span><span class="font-semibold text-slate-900">A friendly and safe environment</span></li>
+              <li class="grid grid-cols-[2rem_1fr] gap-3 border-b border-slate-200 pb-4"><span class="font-bold text-emerald-800">2</span><span class="font-semibold text-slate-900">Open and green spaces in the village</span></li>
+              <li class="grid grid-cols-[2rem_1fr] gap-3 border-b border-slate-200 pb-4"><span class="font-bold text-emerald-800">3</span><span class="font-semibold text-slate-900">Proximity to rivers and woodland</span></li>
+              <li class="grid grid-cols-[2rem_1fr] gap-3"><span class="font-bold text-emerald-800">4</span><span class="font-semibold text-slate-900">A sense of community</span></li>
+            </ol>
+            <p class="mt-7 border-l-2 border-[#f2aa24] pl-4 text-sm leading-6 text-slate-600"><strong class="text-slate-900">80.0%</strong> of respondents described the current age profile of their village as “about right”.</p>
+          </article>
+
+          <article aria-labelledby="housing-heading">
+            <h3 id="housing-heading" class="text-3xl font-bold">Housing preferences</h3>
+            <p class="mt-4 leading-7 text-slate-600"><strong class="text-slate-900">239 returns</strong> selected one of the two lowest rates of housebuilding: less than one, or between one and two homes per year. This is 89% of all returned questionnaires and 91% of those answering this question.</p>
+            <div class="mt-7 space-y-4">
+              <div><div class="mb-2 flex justify-between gap-4 text-sm"><span>Less than 1 per year</span><strong>146</strong></div><div class="h-2 bg-slate-200" role="img" aria-label="146 responses, 55.7 percent of answers"><div class="h-full w-[55.7%] bg-emerald-700"></div></div></div>
+              <div><div class="mb-2 flex justify-between gap-4 text-sm"><span>Between 1 and 2 per year</span><strong>93</strong></div><div class="h-2 bg-slate-200" role="img" aria-label="93 responses, 35.5 percent of answers"><div class="h-full w-[35.5%] bg-sky-600"></div></div></div>
+              <div><div class="mb-2 flex justify-between gap-4 text-sm"><span>Between 2 and 4 per year</span><strong>15</strong></div><div class="h-2 bg-slate-200" role="img" aria-label="15 responses, 5.7 percent of answers"><div class="h-full w-[5.7%] bg-amber-500"></div></div></div>
+              <div><div class="mb-2 flex justify-between gap-4 text-sm"><span>More than 4 per year</span><strong>8</strong></div><div class="h-2 bg-slate-200" role="img" aria-label="8 responses, 3.1 percent of answers"><div class="h-full w-[3.1%] bg-slate-500"></div></div></div>
+            </div>
+            <p class="mt-7 leading-7 text-slate-600">In the weighted ranking of potential housing sources, <strong class="text-slate-900">brownfield sites ranked first</strong>, followed by individual plots or a development. Greenfield sites received the lowest weighted score.</p>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <section class="bg-white py-16 lg:py-20" aria-labelledby="practical-heading">
+      <div class="mx-auto max-w-7xl px-5 lg:px-8">
+        <div class="grid gap-10 lg:grid-cols-[0.55fr_1.45fr] lg:gap-16">
+          <div>
+            <p class="text-xs font-bold uppercase tracking-[0.18em] text-emerald-800">Everyday priorities</p>
+            <h2 id="practical-heading" class="mt-3 text-4xl font-bold">Work and infrastructure</h2>
+            <p class="mt-4 leading-7 text-slate-600">The results also describe how residents work and which local services they would most like to see improved.</p>
+          </div>
+          <div class="space-y-12">
+            <div>
+              <h3 class="text-2xl font-bold">Local economy and home working</h3>
+              <dl class="mt-6 grid gap-px border border-slate-200 bg-slate-200 sm:grid-cols-2">
+                <div class="bg-white p-5"><dt class="text-sm leading-6 text-slate-600">Work from home some or all of the time</dt><dd class="mt-2 text-3xl font-bold text-emerald-800">36.6%</dd></div>
+                <div class="bg-white p-5"><dt class="text-sm leading-6 text-slate-600">Run a business from home</dt><dd class="mt-2 text-3xl font-bold text-emerald-800">14.9%</dd></div>
+                <div class="bg-white p-5"><dt class="text-sm leading-6 text-slate-600">Support reserving land for local employment</dt><dd class="mt-2 text-3xl font-bold text-emerald-800">46.0%</dd></div>
+                <div class="bg-white p-5"><dt class="text-sm leading-6 text-slate-600">Would use a community workspace</dt><dd class="mt-2 text-3xl font-bold text-emerald-800">12.5%</dd></div>
+              </dl>
+            </div>
+
+            <div>
+              <h3 class="text-2xl font-bold">Most requested service improvements</h3>
+              <p class="mt-3 text-sm leading-6 text-slate-600">Respondents could identify more than one service, so these percentages do not add to 100%.</p>
+              <div class="mt-6 space-y-5">
+                <div><div class="mb-2 flex justify-between gap-4 text-sm"><span>Road conditions</span><strong>66.9%</strong></div><div class="h-2 bg-slate-200"><div class="h-full w-[66.9%] bg-emerald-700"></div></div></div>
+                <div><div class="mb-2 flex justify-between gap-4 text-sm"><span>Bus services</span><strong>43.8%</strong></div><div class="h-2 bg-slate-200"><div class="h-full w-[43.8%] bg-sky-600"></div></div></div>
+                <div><div class="mb-2 flex justify-between gap-4 text-sm"><span>Car parking</span><strong>40.2%</strong></div><div class="h-2 bg-slate-200"><div class="h-full w-[40.2%] bg-amber-500"></div></div></div>
+                <div><div class="mb-2 flex justify-between gap-4 text-sm"><span>Surface water drainage</span><strong>38.0%</strong></div><div class="h-2 bg-slate-200"><div class="h-full w-[38%] bg-slate-600"></div></div></div>
+                <div><div class="mb-2 flex justify-between gap-4 text-sm"><span>Broadband</span><strong>36.5%</strong></div><div class="h-2 bg-slate-200"><div class="h-full w-[36.5%] bg-slate-500"></div></div></div>
+              </div>
+            </div>
+
+            <aside class="border-l-4 border-sky-600 bg-sky-50 p-5 text-sm leading-6 text-slate-700" aria-labelledby="method-heading">
+              <h3 id="method-heading" class="font-bold text-slate-900">Reading the results</h3>
+              <p class="mt-2">Percentages are rounded to one decimal place. Question totals vary where a household did not answer. Weighted-score questions show relative ranking rather than a share of respondents, and multiple-choice questions may total more than 100%.</p>
+            </aside>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section class="bg-slate-50 py-14"><div class="mx-auto flex max-w-7xl flex-col justify-between gap-6 px-5 sm:flex-row sm:items-center lg:px-8"><div><h2 class="text-3xl font-bold">From feedback to policy</h2><p class="mt-2 max-w-2xl text-slate-600">Working groups are testing these themes against evidence and planning requirements.</p></div><a href="/governance" class="inline-flex min-h-12 shrink-0 items-center bg-emerald-700 px-6 py-3 text-sm font-bold text-white hover:bg-emerald-800">See the working groups <span class="ms-3">→</span></a></div></section>
   </main>
-  <footer class="bg-slate-900 text-slate-300"><div class="mx-auto flex max-w-7xl flex-col justify-between gap-5 px-5 py-9 sm:flex-row sm:items-center lg:px-8"><div><p class="font-display text-xl font-bold text-white">Vale of Allen Neighbourhood Plan</p><p class="mt-2 text-sm">Community-led planning for nine rural settlements.</p></div><div class="flex gap-5 text-sm"><a href="/documents" class="hover:text-white">Documents</a><a href="/contact" class="hover:text-white">Contact</a></div></div><div class="border-t border-slate-700"><div class="mx-auto max-w-7xl px-5 py-5 text-xs text-slate-400 lg:px-8">© 2026 Vale of Allen Neighbourhood Plan.</div></div></footer>
+  <footer class="bg-slate-900 text-slate-300"><div class="mx-auto flex max-w-7xl flex-col justify-between gap-5 px-5 py-9 sm:flex-row sm:items-center lg:px-8"><div><p class="font-display text-xl font-bold text-white">Vale of Allen Neighbourhood Plan</p><p class="mt-2 text-sm">Community-led planning for nine rural settlements.</p></div><div class="flex gap-5 text-sm"><a href="/governance" class="hover:text-white">Governance</a><a href="/contact" class="hover:text-white">Contact</a></div></div><div class="border-t border-slate-700"><div class="mx-auto max-w-7xl px-5 py-5 text-xs text-slate-400 lg:px-8">© 2026 Vale of Allen Neighbourhood Plan.</div></div></footer>
   <script src="/assets/site.js" defer></script>
 </body>
 </html>
