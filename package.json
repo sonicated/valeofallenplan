@@ -1,0 +1,15 @@
+{
+  "name": "valeofallenplan",
+  "version": "1.0.0",
+  "private": true,
+  "description": "Vale of Allen Neighbourhood Plan website",
+  "scripts": {
+    "build": "node scripts/build-pages.mjs",
+    "pages:create": "wrangler pages project create valeofallenplan --production-branch master --compatibility-date 2026-08-05",
+    "deploy": "npm run build && wrangler pages deploy --branch master --commit-dirty=true",
+    "preview": "npm run build && wrangler pages dev dist --port 4173"
+  },
+  "devDependencies": {
+    "wrangler": "^4.118.0"
+  }
+}
